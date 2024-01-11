@@ -5,12 +5,8 @@ import { useAuth } from "../context/AuthContext";
 import ChatItem from "../components/chat/ChatItem";
 import { IoMdSend } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
-import {
-  deleteUserChats,
-  getUserChats,
-  sendChatRequest,
-} from "../helpers/api-communicator";
 import toast from "react-hot-toast";
+import { deleteUserChats, getUserChats, sendChatRequest } from "../helpers/api-communicatot";
 type Message = {
   role: "user" | "assistant";
   content: string;
@@ -100,7 +96,7 @@ const Chat = () => {
             }}
           >
             {auth?.user?.name[0]}
-            {auth?.user?.name.split(" ")[1][0]}
+            {/* {auth?.user?.name.split(" ")[1][0]} */}
           </Avatar>
           <Typography sx={{ mx: "auto", fontFamily: "work sans" }}>
             You are talking to a ChatBOT

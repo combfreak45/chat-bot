@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Avatar, Typography } from "@mui/material";
 import { useAuth } from "../../context/AuthContext";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+
 import { coldarkDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 function extractCodeFromString(message: string) {
@@ -78,7 +79,7 @@ const ChatItem = ({
     >
       <Avatar sx={{ ml: "0", bgcolor: "black", color: "white" }}>
         {auth?.user?.name[0]}
-        {auth?.user?.name.split(" ")[1][0]}
+        {/* {auth?.user?.name.split(" ")[1][0]} */}
       </Avatar>
       <Box>
         {!messageBlocks && (
