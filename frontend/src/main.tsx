@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { AuthProvider } from './context/AuthContext.tsx'
 import axios from 'axios'
 import { Toaster } from 'react-hot-toast'
-axios.defaults.baseURL = "http://localhost:5000/api/v1";
+axios.defaults.baseURL = "https://chat-k5kqazxpn-arjits-projects-4f88e43c.vercel.app/api/v1";
 axios.defaults.withCredentials = true;
 
 const theme = createTheme({
