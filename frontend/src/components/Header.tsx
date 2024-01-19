@@ -1,5 +1,4 @@
 import { AppBar, Toolbar } from '@mui/material'
-import React from 'react'
 import Logo from './shared/Logo'
 import NavigationLink from './NavigationLink';
 import { useAuth } from '../context/AuthContext';
