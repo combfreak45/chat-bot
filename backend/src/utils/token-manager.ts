@@ -1,7 +1,6 @@
 import { NextFunction, Request, Response } from 'express'
 import jwt from 'jsonwebtoken'
 import { COOKIE_NAME } from './constants.js'
-import { log } from 'console'
 
 
 
