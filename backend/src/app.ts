@@ -16,6 +16,9 @@ app.use(cookieParser(process.env.COOKIE_SECRET))
 
 app.use(morgan('dev'))
 
+app.get('/',(req,res)=>{
+    res.send(200).send("Ready")
+})
 app.use('/api/v1',appRouter)
 
 export default  app;
